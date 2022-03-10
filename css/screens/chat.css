@@ -1,0 +1,238 @@
+#chat-screen {
+  padding-top: 30px;
+  background-color: #fafafa;
+}
+#chat-screen .alt-heaer,
+#chat-screen .status-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+#chat-screen .alt-heaer {
+  top: 10px;
+  z-index: 1;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message-row {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.message__author {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__greeting {
+  display: flex;
+  flex-direction: column;
+}
+.message__greeting .message__bubble:first-child {
+  opacity: 0;
+  animation: fadeIn 2s linear forwards;
+  animation-delay: 0.5s;
+}
+.message__greeting .message__bubble:last-child {
+  opacity: 0;
+  animation: fadeIn 2s linear forwards;
+  animation-delay: 1.5s;
+}
+.message__info {
+  opacity: 0;
+  animation: fadeIn 2s linear forwards;
+  animation-delay: 1.5s;
+}
+.message__bubble {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.message__info {
+  display: flex;
+  align-items: center;
+}
+.message__time {
+  font-size: 14px;
+  color: #cacaca;
+}
+.message__info img {
+  width: 20px;
+  height: 20px;
+}
+.message__author,
+.message__time {
+  opacity: 0.8;
+}
+.message-row--own {
+  justify-content: flex-end;
+  opacity: 0;
+  animation: fadeIn 1.5s linear forwards;
+  animation-delay: 2.5s;
+}
+.message-row--own .message-row__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.message-row--own .message__bubble {
+  margin-right: 0px;
+  margin-left: 5px;
+  order: 1px;
+}
+.message-row--own .message__time {
+  order: 0;
+  margin-right: 5px;
+}
+.message-row--own .message__info {
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.message__bubble__circle {
+  display: flex;
+  gap: 5px;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.message__bubble .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.message__bubble__circle {
+  opacity: 0;
+  animation: show 1.5s linear infinite;
+  animation-delay: 3.5s;
+  will-change: transform;
+}
+.message__bubble .circle:first-child {
+  background-color: #a9a9a9;
+  animation-delay: 0.2s;
+}
+.message__bubble .circle:nth-child(2) {
+  background-color: #d3d3d3;
+  animation-delay: 0.4s;
+}
+.message__bubble .circle:last-child {
+  background-color: #efefef;
+  animation-delay: 0.6s;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply__column__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 5px;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reply input {
+  padding: 15px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.reply__column:last-child > i {
+  right: 50px;
+  top: 15px;
+}
+.reply__column button {
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply i {
+  opacity: 0.5;
+  font-size: 26px;
+}
+.reply__column button i {
+  opacity: 1;
+  font-size: 16px;
+}
+.reply .reply__column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply input:focus {
+  width: 98vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
+}

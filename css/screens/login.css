@@ -1,0 +1,68 @@
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5%;
+}
+#login-form > div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.login-form__username input,
+.login-form__password input {
+  padding: 15px 0 15px 12%;
+  border: 2px solid #aeb4c9;
+  border-radius: 50px;
+  font-size: 18px;
+  margin: 10px 0;
+  width: 100%;
+}
+#login-form label {
+  margin: 10px 20px;
+}
+#login-form input::placeholder {
+  color: #ccc;
+}
+#login-form input:focus {
+  border-color: var(--blue);
+}
+.login-form__username:focus-within label {
+  color: var(--blue);
+}
+.login-form__password:focus-within label {
+  color: var(--blue);
+}
+.login-form__button {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-form__button > input {
+  padding: 15px 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.login-form__button__join {
+  background-color: #fff;
+  color: var(--blue);
+  border: none;
+  font-weight: bold;
+}
+.login-form__button__login {
+  background-color: var(--blue);
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 5px;
+}

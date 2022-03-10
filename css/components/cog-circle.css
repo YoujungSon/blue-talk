@@ -1,0 +1,7 @@
+.cog__circle {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 3.5px;
+  background-color: var(--blue);
+}

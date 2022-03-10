@@ -1,0 +1,110 @@
+.recommended-friends {
+  margin: 25px 0;
+}
+.recommended-friends span {
+  margin: 70px 0;
+  text-align: center;
+  display: block;
+  color: var(--gray);
+  font-size: 14px;
+}
+.open-chat__header {
+  border-top: var(--main-border);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.open-chat__header span {
+  color: var(--gray);
+  font-size: 14px;
+}
+.open-chat__header span i {
+  margin-left: 5px;
+}
+.open-post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.open-post__column:first-child {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.open-post__column:last-child {
+  width: 20%;
+  overflow: hidden;
+}
+.open-post__hashtags {
+  color: var(--gray);
+  font-size: 14px;
+  width: 90%;
+  height: 28px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.open-post-members {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  font-size: 12px;
+}
+.open-post-members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-post__member-count {
+  opacity: 0.5;
+}
+.open-post-members .divider {
+  width: 1px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.open-post__member-status {
+  color: #ffb0e0;
+}
+.open-post__photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.open-post__photo img {
+  height: 100%;
+  width: 100%;
+}
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+.open-post__photo:hover i {
+  color: tomato;
+}

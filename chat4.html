@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blue-talk-chat</title>
+</head>
+
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="xi-signal-4"></i>
+            <i class="xi-wifi"></i>
+            <i class="xi-battery"></i>
+        </div>
+    </div>
+    <header class="alt-heaer">
+        <div class="alt-header__column">
+            <a href="chats.html">
+                <i class="xi-angle-left-min"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Olivia Grant</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="xi-search"></i></span>
+            <span><i class="xi-bars"></i></span>
+        </div>
+    </header>
+    <main class="main-screen main-chat">
+        <div class="message-row">
+            <div class="message__greeting">
+                <span class="message__bubble">Hi!</span>
+                <span class="message__bubble">How are you?</span>
+            </div>
+            <div class="message-row__content">
+                <div class="message__info">
+                    <img src="images/person3.png" alt="">
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__greeting">
+                    <span class="message__bubble">I'm fine.</span>
+                </div>
+                <div class="message-row__content">
+                    <div class="message__info">
+                        <img src="https://avatars.githubusercontent.com/u/88040809?v=4" alt="">
+                        <span class="message__time">21:27</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <span class="message__bubble message__bubble__circle">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </span>
+        </div>
+    </main>
+    <form class="reply">
+        <div class="reply__column">
+            <i class="xi-plus-circle-o xi-2x"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message...">
+            <div class="reply__column__button">
+                <i class="xi-emoticon-smiley-o xi-2x"></i>
+                <button>
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <div id="no-mobile">
+        <p>blue talk <i class="xi-speech-o"></i></p>
+        <p>Your screen is too big</p>
+    </div>
+    <script src="https://kit.fontawesome.com/421a17a3f9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

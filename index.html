@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blue-talk-login</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="xi-signal-4"></i>
+            <i class="xi-wifi"></i>
+            <i class="xi-battery"></i>
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Blue Talk</h1>
+        <p class="welcome-header__text">로그인을 해주세요.</p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+        <div class="login-form__username">
+            <label for="username">이메일</label>
+            <input required name="username" type="text" placeholder="blue@gmail.com">
+        </div>
+        <div class="login-form__password">
+            <label for="password">비밀번호</label>
+            <input required name="password" type="password" placeholder="Password">
+        </div>
+        <div class="login-form__button">
+            <input type="submit" value="회원가입" class="login-form__button__join">
+            <input type="submit" value="로그인" class="login-form__button__login">
+        </div>
+        <a href="#">Find Account or Password</a>
+    </form>
+    <div id="no-mobile">
+        <p>blue talk <i class="xi-speech-o"></i></p>
+        <p>Your screen is too big</p>
+    </div>
+</body>
+
+</html>
